@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Refa online exhibition demo</title>
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="scripts/jquery-3.5.0.min.js"></script>
+    <script src="scripts/turn.js"></script>
+  </head>
+  <body>
+    <div class="flipbook-viewport">
+      <div class="container">
+        <div class="flipbook">
+          <div id="text">Trees</div>
+          <div id="text">Page 1</div>
+          <div id="text">Page 2</div>
+          <div id="text">Page 3</div>
+          <div id="text">Page 4</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $('.flipbook').turn({
+        width: 922,
+        height: 600,
+        elevation: 50,
+        autoCenter: true,
+        gradients: true,
+      })
+    </script>
+  </body>
+</html>
