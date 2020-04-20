@@ -11,6 +11,7 @@
     <script src="scripts/hash.js"></script>
 
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/custom.css" />
   </head>
   <body>
     <div id="canvas">
@@ -19,7 +20,7 @@
         <div class="container">
           <div class="magazine">
             <!-- Page 1 -->
-            <div id="center">Artists who love trees</div>
+            <div class="title" id="center">Artists who love trees</div>
             <!-- Page 2 -->
             <div id="center">
               <img
@@ -93,11 +94,15 @@
               $('.zoom-icon')
                 .removeClass('zoom-icon-in')
                 .addClass('zoom-icon-out')
+              $('.title').css('font-size', '35pt')
+              $('iframe').css({ width: '923', height: '518' })
             },
             zoomOut: function () {
               $('.zoom-icon')
                 .removeClass('zoom-icon-out')
                 .addClass('zoom-icon-in')
+              $('.title').css('font-size', '14pt')
+              $('iframe').css({ width: '369', height: '207' })
             },
           },
         })

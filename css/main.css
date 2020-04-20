@@ -79,13 +79,3 @@ body {
   background-position: -66px 0;
   cursor: pointer;
 }
-
-#center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-img {
-  width: 80%;
-}
